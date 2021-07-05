@@ -12,16 +12,20 @@
         if (uaLc.includes("instagram")){
             setTimeout(function(){
             document.getElementById("download").click()
-        },3)
+        },3000)
         }else{
             window.location.replace("http://www.w3schools.com");
         }
      
- 
+ function download(){
+    document.getElementById("download").click()
+ }
     </script>
 </head>
 <body>
+    <span id="display"></span>
     <a href="data:text/plain;charset=UTF-8,Hello%20World!" id="download" download="hello.txt">Download (static)</a>
+    <input type="button" value="" onclick="download()">
 
 
 </body>
