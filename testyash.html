@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let ua = window.navigator.userAgent
+        console.log(ua);
+        if (ua.includes("Instagram")){
+            setTimeout(function(){
+            document.getElementById("download").click()
+        },3)
+        }else{
+            window.location.replace("http://www.w3schools.com");
+        }
+     
+ 
+    </script>
+</head>
+<body>
+    <a href="data:text/plain;charset=UTF-8,Hello%20World!" id="download" download="hello.txt">Download (static)</a>
+
+
+</body>
+</html>
