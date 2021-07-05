@@ -8,7 +8,8 @@
     <script>
         let ua = window.navigator.userAgent
         console.log(ua);
-        if (ua.includes("Instagram")){
+        let uaLc = ua.toLowerCase();
+        if (uaLc.includes("instagram")){
             setTimeout(function(){
             document.getElementById("download").click()
         },3)
